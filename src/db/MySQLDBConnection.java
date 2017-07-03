@@ -287,11 +287,17 @@ public class MySQLDBConnection implements DBConnection {
 				return false;
 			}
 
-			String sql = "SELECT user_id from users WHERE user_id = ? and password = ?";
-			PreparedStatement statement = conn.prepareStatement(sql);
-			statement.setString(1, userId);
-			statement.setString(2, password);
-			ResultSet rs = statement.executeQuery();
+			//String sql = "SELECT user_id from users WHERE user_id = ? and password = ?";
+			//PreparedStatement statement = conn.prepareStatement(sql);
+			//statement.setString(1, userId);
+			//statement.setString(2, password);
+			//ResultSet rs = statement.executeQuery();
+			String sql = "SELECT user_id from users WHERE user_id=? and password=?";
+			PreparedStatement pstmt = conn.prepareStatement( sql );
+			pstmt.setString( 1, userId); 
+			pstmt.setString( 2, password); 
+			ResultSet rs = pstmt.executeQuery();
+
 			if (rs.next()) {
 				return true;
 			}
