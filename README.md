@@ -1,28 +1,27 @@
 This is a restaurant recommendation based on yelp
 ==========================================
-this website is available at http://chihuo.wutianyu921101.com/Dashi/#
+This website is available at http://chihuo.wutianyu921101.com/Dashi.
 
-this a demo the account is 1111 and password is 2222
+The demo account is 1111 and password is 2222.
 
 Installation
 ------------
 
-1. Download 
 
 
-    Install Java
-    In your instance's terminal, execute the following commands:
+* Install Java
+In your instance's terminal, execute the following commands:
 
-		[me@machine ~/] sudo add-apt-repository ppa:webupd8team/java 
+    	[me@machine ~/] sudo add-apt-repository ppa:webupd8team/java 
 		[me@machine ~/valgrind-X.X.X] sudo apt-get update
 		[me@machine ~/valgrind-X.X.X] sudo apt-get install oracle-java8-installer
 		[me@machine ~/valgrind-X.X.X] java -version (you can verify with this command)
     
-    Install mySQL
+* Install mySQL
 
 		[me@machine ~/] sudo apt-get install mysql-server 
 		[me@machine ~/] mysql -u root -p
-		In the mysql shell, paste the following SQL statements to install the tables:
+		/*In the mysql shell, paste the following SQL statements to install the tables*/
 		DROP DATABASE IF EXISTS laiproject;
 		CREATE DATABASE laiproject;
 		USE laiproject;
@@ -31,8 +30,8 @@ Installation
 		CREATE TABLE history (visit_history_id bigint(20) unsigned NOT NULL AUTO_INCREMENT, user_id VARCHAR(255) NOT NULL , business_id VARCHAR(255) NOT NULL, last_visited_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (visit_history_id), FOREIGN KEY (business_id) REFERENCES restaurants(business_id), FOREIGN KEY (user_id) REFERENCES users(user_id));
 		INSERT INTO users VALUES ("1111", "3229c1097c00d497a0fd282d586be050", "John", "Smith");
 		
-    Install Tomcat
-    In your instance's terminal, execute the following commands:
+* Install Tomcat
+In your instance's terminal, execute the following commands:
 
 		cd /opt/
 		sudo wget http://mirrors.ocf.berkeley.edu/apache/tomcat/tomcat-9/v9.0.0.M20/bin/apache-tomcat-9.0.0.M20.tar.gz
@@ -42,49 +41,42 @@ Installation
 		source ~/.bashrc
 		cd /opt/tomcat
 		sudo ./bin/startup.sh
-     Install the website
-     export the project as a war file from eclipse for ee developer then type
+deploy
+------
 
-		sudo cp ~/Dashi.war /opt/tomcat/webapps/ 
-      After installation you can see your website at https:// your_Instance_IP:8080/Dashi/
+export the project as a war file from eclipse for ee developer then type
+
+	sudo cp ~/Dashi.war /opt/tomcat/webapps/ 
+After installation you can see your website at https:// your_Instance_IP:8080/Dashi/
       
       
 Sample output
 -------------
 
-This figure shows that you nearby restaurant and there are already some favorite restaurants which is marked as black heart
-![Alt text](https://github.com/WTY1/Dashi/blob/master/output/1.PNG)
-=====================================================================
-This figure shows your favorite restaurants
-![Alt text](https://github.com/WTY1/Dashi/blob/master/output/2.PNG)
-=====================================================================
-This figure shows the recommendation restaurants based on your favorite restaurants
-![Alt text](https://github.com/WTY1/Dashi/blob/master/output/3.PNG)
-=====================================================================
-
-
+* ![index page looking](https://cl.ly/0M1E1O331m2z)
+* ![recommandation page looking](https://cl.ly/2a0I0y2b0u3G)
 
 
 Notes
 -----
 
-  My contribute is :
+My contribute is :
 
-  •Developed a dynamic web page for users to search businesses and update preference 
+ * Developed a dynamic web page for users to search businesses and update preference 
   
-  •Improved personalized business recommendation based on search history and favorite records
+ * Improved personalized business recommendation based on search history and favorite records
   
-  Back End:
+Back End:
 
-   •	Created Java servlets with RESTful APIs to handle HTTP requests and responses
+ * Created Java servlets with RESTful APIs to handle HTTP requests and responses
 
-   •	Built relational and NoSQL databases (MySQL, MongoDB) to capture real business data from Yelp API
+ * Built relational and NoSQL databases (MySQL, MongoDB) to capture real business data from Yelp API
 
-   •	Designed algorithms (e.g., content-based recommendation) to implement business recommendation
+ * Designed algorithms (e.g., content-based recommendation) to implement business recommendation
 
-   •	Deployed server side to Amazon EC2 to handle 150 queries per second tested by Apache JMeter.
+ * Deployed server side to Amazon EC2 to handle 150 queries per second tested by Apache JMeter.
 
-   Front End:
+Front End:
 
-   •	Designed an interactive web page utilizing AJAX technology (HTML, CSS and JavaScript)
+ * Designed an interactive web page utilizing AJAX technology (HTML, CSS and JavaScript)
 
