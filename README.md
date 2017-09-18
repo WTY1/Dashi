@@ -51,11 +51,16 @@ After installation you can see your website at https:// your_Instance_IP:8080/Da
       
       
 Sample output
--------------
-
-* ![index page looking](https://cl.ly/0M1E1O331m2z)
-* ![recommandation page looking](https://cl.ly/2a0I0y2b0u3G)
-
+  -------------
+  This figure shows that you nearby restaurant and there are already some favorite restaurants which is marked as black heart
+  ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/1.PNG)
+  =====================================================================
+  This figure shows your favorite restaurants
+  ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/2.PNG)
+  =====================================================================
+ This figure shows the recommendation restaurants based on your favorite restaurants
+  ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/3.PNG)
+ =====================================================================
 
 Notes
 -----
