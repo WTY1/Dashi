@@ -51,9 +51,13 @@ Installation
       
 Sample output
 -------------
-This figure shows that you nearby restaurant and there 
+This figure shows that you nearby restaurant and there are already some favorite restaurants which is marked as black heart
 ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/1.PNG)
+=====================================================================
+This figure shows your favorite restaurants
 ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/2.PNG)
+=====================================================================
+This figure shows the recommendation restaurants based on your favorite restaurant
 ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/3.PNG)
 
 
