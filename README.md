@@ -1,4 +1,28 @@
 This is a restaurant recommendation based on yelp
+==========================================
+this website is available at http://chihuo.wutianyu921101.com/Dashi/#
+
+Installation
+------------
+
+1. Download 
+
+
+    Install Java
+    In your instance's terminal, execute the following commands:
+
+		[me@machine ~/] sudo add-apt-repository ppa:webupd8team/java 
+		[me@machine ~/valgrind-X.X.X] sudo apt-get update
+		[me@machine ~/valgrind-X.X.X] sudo apt-get install oracle-java8-installer
+		[me@machine ~/valgrind-X.X.X] java -version (you can verify with this command)
+    
+    Install mySQL
+
+		[me@machine ~/] sudo apt-get install mysql-server 
+		[me@machine ~/] mysql -u root -p
+		
+
+
 my contribute is :
 
   •Developed a dynamic web page for users to search businesses and update preference 
