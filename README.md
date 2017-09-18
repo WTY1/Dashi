@@ -51,6 +51,7 @@ Installation
       
 Sample output
 -------------
+This figure shows that you nearby restaurant and there 
 ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/1.PNG)
 ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/2.PNG)
 ![Alt text](https://github.com/WTY1/Dashi/blob/master/output/3.PNG)
