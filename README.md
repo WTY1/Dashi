@@ -1,8 +1,5 @@
 This is a restaurant recommendation based on yelp
 ==========================================
-This website is available at http://chihuo.wutianyu921101.com/Dashi.
-
-The demo account is 1111 and password is 2222.
 
 Installation
 ------------
